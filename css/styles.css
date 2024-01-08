@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+}
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+.piano {
+    position: relative;
+    display: flex;
+    width: 350px;
+}
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 20px;
+}
+.white {
+    height: 200px;
+    width: 50px;
+    background: white;
+    border: black 1px solid ;
+}
+.white.active {
+    background: lightgray;
+}
+.black.active {
+    background: rgb(35, 35, 35);
+}
+.black {
+    height: 120px;
+    width: 30px;
+    background: black;
+    margin-left: -15px;
+    margin-right: -15px;
+    z-index: 2;
+}
+.black span {
+    color: white;
+}
